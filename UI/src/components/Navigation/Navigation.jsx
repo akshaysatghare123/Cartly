@@ -15,7 +15,7 @@ const Navigation = ({variant="default"}) => {
     <nav className='flex items-center py-6 px-16 justify-between gap-20 custom-nav'>
       <div className='flex items-center gap-6'>
         {/* Logo */}
-        <a className='text-3xl text-black font-bold gap-8' href='/'>ShopEase</a>
+        <a className='text-3xl text-black font-bold gap-8' href='/'>Cartly</a>
       </div>
       { variant ==="default" &&
       <div className='flex flex-wrap items-center gap-10'>
@@ -25,6 +25,7 @@ const Navigation = ({variant="default"}) => {
           <li><NavLink to='/men' className={({isActive})=> isActive ? 'active-link':''}>Men</NavLink></li>
           <li><NavLink to='/women' className={({isActive})=> isActive ? 'active-link':''}>Women</NavLink></li>
           <li><NavLink to='/kids' className={({isActive})=> isActive ? 'active-link':''}>Kids</NavLink></li>
+          <li><NavLink to='/electronics' className={({isActive})=> isActive ? 'active-link':''}>Electronics</NavLink></li>
         </ul>
 
       </div>
